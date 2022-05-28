@@ -1,0 +1,5 @@
+#bgcolour{
+    height: 200px;
+    background-color: rgb(252, 134, 134);
+    background-image: linear-gradient(to right, rgb(223, 141, 141) , rgb(115, 178, 238));
+}
