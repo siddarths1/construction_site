@@ -16,6 +16,20 @@
          background-color: rgb(145, 207, 193);
          height: 1500px;
       }
+      
+      .fileinput{
+         padding: 20px 50px 20px 50px;
+         margin: 20px 20px 20px 20px;
+      }
+      #fileinputtext{
+         background-color:chocolate;
+
+      }
+      #link{
+         padding: 30px;
+         margin: 30px 30px 20px 30px;
+      }
+ 
 
    </style>
     <center>
@@ -89,31 +103,39 @@
       <!-- nav -->
      
    
+<!-- form -->
+<h3 id="filetext">WOULD YOU LIKE TO SHARE YOUR DESIGN WITH US !!</h3>
+<div class="fileinput">
+   <input type="file" id="fileinputtext" accept="image/*" />
+
+</div> 
+  
+   
    <fieldset >
       <legend>COULD YOU PLEASE SHARE US WITH YOUR DETAILS</legend>  
-   <form>
+   <form action="/formdetails" method="post">
       <center> 
       <div class="form-row">
          <div class="form-group col-md-8">
-            FIRST NAME: <label> <div class="col"><input type="text" class="form-control" placeholder="First name"></label>
+            FIRST NAME: <label> <div class="col"><input type="text" class="form-control" name="fname" placeholder="First name"></label>
           </div>
          </div>
          <br>
          <div class="form-row">
             <div class="form-group col-md-8">
-               LAST NAME: <label> <div class="col"><input type="text" class="form-control" placeholder="Last name"></label>
+               LAST NAME: <label> <div class="col"><input type="text" class="form-control" name="lname" placeholder="Last name"></label>
          </div>
       </div>
       <br>
             <div class="form-row">
           <div class="form-group col-md-8">
-            EMAIL:<label> <div class="col"><input type="email" class="form-control" placeholder="Enter email"></label>
+            EMAIL:<label> <div class="col"><input type="email" class="form-control" name="email" placeholder="Enter email"></label>
         </div>
       </div>
       <br>
          <div class="form-row">
            <div class="form-group col-md-8">
-           PHONE NO:<label> <div class="col"><input type="text" class="form-control"></label>
+           PHONE NO:<label> <div class="col"><input type="text" name="phone" class="form-control"></label>
         </div>
       </div>
       <br>
@@ -121,7 +143,7 @@
          <div class="form-group col-md-8">
          
             CITY: <label for="inputCity">
-           <input type="text" class="form-control" id="inputCity">
+           <input type="text" class="form-control" name="city" id="inputCity">
          </label>
          </div>
       </div>
@@ -129,7 +151,7 @@
       <div class="form-row">
          <div class="form-group col-md-8">
           STATE: <label for="inputState">
-           <select id="inputState" class="form-control">
+           <select id="inputState" name="state" class="form-control">
              <option selected>TAMIL NADU</option>
              <option>Andhra Pradesh</option>	
              <option>   Arunachal Pradesh</option>	
@@ -165,7 +187,7 @@
       </div>
       <br>
   <!-- <div class="alert alert-secondary" style="width: 30%;"   > -->
-   SELECT YOUR INTERESTS: <br><input type="checkbox">APARTMENTS <br>
+   SELECT YOUR INTERESTS: <br><input type="checkbox" name="interests" >APARTMENTS <br>
                <input type="checkbox">VILLAS  <br>
                <input type="checkbox">PLOTS    <br>
                <input type="checkbox">COMPACT HOUSES  <br>
@@ -186,7 +208,7 @@
 
    
 
-<h2 style="border-bottom: 3px; font: 2em sans-serif;"><q>FEEL FREE TO CONTACT US </q></h2>
+<h2 style="border-bottom: 3px; font: 2em sans-serif;" id="link"><q>FEEL FREE TO CONTACT US </q></h2>
 
 <ul type="none" >
    
